@@ -1,0 +1,114 @@
+\documentclass[openany,12pts,letterpaper,oneside,onecolumn]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{lscape}
+\usepackage{longtable}
+
+
+%codigo en java
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=Java,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+\lstdefinestyle{customasm}{
+	belowcaptionskip=1\baselineskip,
+	frame=L,
+	xleftmargin=\parindent,
+	language=[x86masm]Assembler,
+	basicstyle=\footnotesize\ttfamily,
+	commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}
+
+%parrafos
+\makeatletter
+\newcounter{subsubparagraph}[subparagraph]
+\renewcommand\thesubsubparagraph{%
+	\thesubparagraph.\@arabic\c@subsubparagraph}
+\newcommand\subsubparagraph{%
+	\@startsection{subsubparagraph}    % counter
+	{6}                              % level
+	{\parindent}                     % indent
+	{3.25ex \@plus 1ex \@minus .2ex} % beforeskip
+	{-1em}                           % afterskip
+	{\normalfont\normalsize\bfseries}}
+\newcommand\l@subsubparagraph{\@dottedtocline{6}{10em}{5em}}
+\newcommand{\subsubparagraphmark}[1]{}
+\makeatother
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+\begin{document}
+
+\author{  Daniela Córdoba Acosta\\
+	Johan Quiroga Torres\\
+	Santiago Jiménez Bonilla
+}
+\title{	TWO WHEELS PARKING\\
+	Sistema de Gestión de biciparqueaderos}
+
+\date{Febrero 2018}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+
+\part{Contexto}
+\include{contexto/proyecto}
+
+\include{contexto/metodologia}
+
+\part{Arquitecura}
+\include{arquitecura/Organizacion}
+\include{arquitecura/ADM}
+\include{arquitecura/negocio}
+\include{arquitecura/aplicacion}
+\include{arquitecura/tecnologia}
+\include{arquitecura/motivacion}
+\include{arquitecura/migracion}
+
+\part{Diseño}
+\include{diseno/casos}
+\include{diseno/interacciones}
+\include{diseno/clases}
+\include{diseno/estados}
+\include{diseno/actividades}
+\include{diseno/sistemas}
+\include{diseno/componentes}
+\include{diseno/nodos}
+
+\include{diseno/patrones}
+
+\part{Reflexiones}
+\include{reflexiones/conclusiones}
+\include{reflexiones/trabajos futuros}
+\include{anexos/anexos}
+
+\backmatter
+% bibliography, glossary and index would go here.
+\bibliographystyle{plain}
+\bibliography{bibliografia/libros,bibliografia/articulos}
+
+\end{document}
