@@ -1,4 +1,4 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \contentsline {part}{I\hspace {1em}Contexto}{1}{part.1}
 \contentsline {chapter}{\numberline {1}Proyecto}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Objetivos del Proyecto}{2}{section.1.1}
@@ -90,38 +90,38 @@
 \contentsline {section}{\numberline {9.1}Introducci\IeC {\'o}n}{44}{section.9.1}
 \contentsline {section}{\numberline {9.2}Punto de Vista de Infraestructura}{44}{section.9.2}
 \contentsline {subsection}{\numberline {9.2.1}Descripci\IeC {\'o}n}{44}{subsection.9.2.1}
-\contentsline {subsubsection}{\numberline {9.2.1.1}Caso de Estudio}{45}{subsubsection.9.2.1.1}
-\contentsline {section}{\numberline {9.3}Punto de Vista de Uso de Infraestructura}{45}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Descripci\IeC {\'o}n}{45}{subsection.9.3.1}
-\contentsline {subsubsection}{\numberline {9.3.1.1}Metamodelo}{46}{subsubsection.9.3.1.1}
-\contentsline {subsubsection}{\numberline {9.3.1.2}Caso de Estudio}{46}{subsubsection.9.3.1.2}
-\contentsline {section}{\numberline {9.4}Punto de Vista de Organizaci\IeC {\'o}n e implementaci\IeC {\'o}n}{47}{section.9.4}
-\contentsline {subsection}{\numberline {9.4.1}Descripci\IeC {\'o}n}{47}{subsection.9.4.1}
-\contentsline {subsubsection}{\numberline {9.4.1.1}Metamodelo}{47}{subsubsection.9.4.1.1}
-\contentsline {subsubsection}{\numberline {9.4.1.2}Caso de Estudio}{48}{subsubsection.9.4.1.2}
-\contentsline {section}{\numberline {9.5}Punto de Vista de Estructura de Informaci\IeC {\'o}n}{48}{section.9.5}
-\contentsline {subsection}{\numberline {9.5.1}Descripci\IeC {\'o}n}{48}{subsection.9.5.1}
-\contentsline {subsubsection}{\numberline {9.5.1.1}Metamodelo}{49}{subsubsection.9.5.1.1}
-\contentsline {subsubsection}{\numberline {9.5.1.2}Caso de Estudio}{49}{subsubsection.9.5.1.2}
-\contentsline {section}{\numberline {9.6}Punto de Vista de Realizaci\IeC {\'o}n del Servicio}{50}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}Descripci\IeC {\'o}n}{50}{subsection.9.6.1}
-\contentsline {subsubsection}{\numberline {9.6.1.1}Metamodelo}{50}{subsubsection.9.6.1.1}
-\contentsline {subsubsection}{\numberline {9.6.1.2}Caso de Estudio}{51}{subsubsection.9.6.1.2}
-\contentsline {section}{\numberline {9.7}Punto de Vista de Capas}{51}{section.9.7}
-\contentsline {subsection}{\numberline {9.7.1}Descripci\IeC {\'o}n}{51}{subsection.9.7.1}
-\contentsline {subsubsection}{\numberline {9.7.1.1}Metamodelo}{52}{subsubsection.9.7.1.1}
-\contentsline {subsubsection}{\numberline {9.7.1.2}Caso de Estudio}{52}{subsubsection.9.7.1.2}
-\contentsline {chapter}{\numberline {10}Motivaci\IeC {\'o}n}{53}{chapter.10}
-\contentsline {chapter}{\numberline {11}Migraci\IeC {\'o}n}{54}{chapter.11}
-\contentsline {part}{III\hspace {1em}Dise\IeC {\~n}o}{55}{part.3}
-\contentsline {chapter}{\numberline {12}Casos de USo}{56}{chapter.12}
-\contentsline {chapter}{\numberline {13}Interacciones}{57}{chapter.13}
-\contentsline {chapter}{\numberline {14}Clases}{58}{chapter.14}
-\contentsline {chapter}{\numberline {15}Estados}{59}{chapter.15}
-\contentsline {chapter}{\numberline {16}Actividades}{60}{chapter.16}
-\contentsline {chapter}{\numberline {17}Sistemas}{61}{chapter.17}
-\contentsline {chapter}{\numberline {18}Componentes}{62}{chapter.18}
-\contentsline {chapter}{\numberline {19}Nodos}{63}{chapter.19}
-\contentsline {chapter}{\numberline {20}Patrones GoF}{64}{chapter.20}
-\contentsline {part}{IV\hspace {1em}Reflexiones}{65}{part.4}
-\contentsline {chapter}{\numberline {21}Conclusiones y Trabajos futuros}{66}{chapter.21}
+\contentsline {subsubsection}{\numberline {9.2.1.1}Metamodelo}{45}{subsubsection.9.2.1.1}
+\contentsline {subsubsection}{\numberline {9.2.1.2}Caso de Estudio}{45}{subsubsection.9.2.1.2}
+\contentsline {section}{\numberline {9.3}Punto de Vista de Uso de Infraestructura}{46}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Descripci\IeC {\'o}n}{46}{subsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.1.1}Metamodelo}{47}{subsubsection.9.3.1.1}
+\contentsline {subsubsection}{\numberline {9.3.1.2}Caso de Estudio}{47}{subsubsection.9.3.1.2}
+\contentsline {section}{\numberline {9.4}Punto de Vista de Organizaci\IeC {\'o}n e implementaci\IeC {\'o}n}{48}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Descripci\IeC {\'o}n}{48}{subsection.9.4.1}
+\contentsline {subsubsection}{\numberline {9.4.1.1}Metamodelo}{49}{subsubsection.9.4.1.1}
+\contentsline {subsubsection}{\numberline {9.4.1.2}Caso de Estudio}{49}{subsubsection.9.4.1.2}
+\contentsline {section}{\numberline {9.5}Punto de Vista de Estructura de Informaci\IeC {\'o}n}{50}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Descripci\IeC {\'o}n}{50}{subsection.9.5.1}
+\contentsline {subsubsection}{\numberline {9.5.1.1}Metamodelo}{51}{subsubsection.9.5.1.1}
+\contentsline {subsubsection}{\numberline {9.5.1.2}Caso de Estudio}{51}{subsubsection.9.5.1.2}
+\contentsline {section}{\numberline {9.6}Punto de Vista de Realizaci\IeC {\'o}n del Servicio}{52}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Descripci\IeC {\'o}n}{52}{subsection.9.6.1}
+\contentsline {subsubsection}{\numberline {9.6.1.1}Metamodelo}{53}{subsubsection.9.6.1.1}
+\contentsline {subsubsection}{\numberline {9.6.1.2}Caso de Estudio}{53}{subsubsection.9.6.1.2}
+\contentsline {section}{\numberline {9.7}Punto de Vista de Capas}{54}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}Descripci\IeC {\'o}n}{54}{subsection.9.7.1}
+\contentsline {subsubsection}{\numberline {9.7.1.1}Caso de Estudio}{54}{subsubsection.9.7.1.1}
+\contentsline {chapter}{\numberline {10}Motivaci\IeC {\'o}n}{56}{chapter.10}
+\contentsline {chapter}{\numberline {11}Migraci\IeC {\'o}n}{57}{chapter.11}
+\contentsline {part}{III\hspace {1em}Dise\IeC {\~n}o}{58}{part.3}
+\contentsline {chapter}{\numberline {12}Casos de USo}{59}{chapter.12}
+\contentsline {chapter}{\numberline {13}Interacciones}{60}{chapter.13}
+\contentsline {chapter}{\numberline {14}Clases}{61}{chapter.14}
+\contentsline {chapter}{\numberline {15}Estados}{62}{chapter.15}
+\contentsline {chapter}{\numberline {16}Actividades}{63}{chapter.16}
+\contentsline {chapter}{\numberline {17}Sistemas}{64}{chapter.17}
+\contentsline {chapter}{\numberline {18}Componentes}{65}{chapter.18}
+\contentsline {chapter}{\numberline {19}Nodos}{66}{chapter.19}
+\contentsline {chapter}{\numberline {20}Patrones GoF}{67}{chapter.20}
+\contentsline {part}{IV\hspace {1em}Reflexiones}{68}{part.4}
+\contentsline {chapter}{\numberline {21}Conclusiones y Trabajos futuros}{69}{chapter.21}
