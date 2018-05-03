@@ -111,16 +111,54 @@
 \BOOKMARK [3][-]{subsubsection.9.7.1.1}{Metamodelo}{subsection.9.7.1}% 111
 \BOOKMARK [3][-]{subsubsection.9.7.1.2}{Caso de Estudio}{subsection.9.7.1}% 112
 \BOOKMARK [0][-]{chapter.10}{Motivaci\363n}{part.2}% 113
-\BOOKMARK [0][-]{chapter.11}{Migraci\363n}{part.2}% 114
-\BOOKMARK [-1][-]{part.3}{III Dise\361o}{}% 115
-\BOOKMARK [0][-]{chapter.12}{Casos de USo}{part.3}% 116
-\BOOKMARK [0][-]{chapter.13}{Interacciones}{part.3}% 117
-\BOOKMARK [0][-]{chapter.14}{Clases}{part.3}% 118
-\BOOKMARK [0][-]{chapter.15}{Estados}{part.3}% 119
-\BOOKMARK [0][-]{chapter.16}{Actividades}{part.3}% 120
-\BOOKMARK [0][-]{chapter.17}{Sistemas}{part.3}% 121
-\BOOKMARK [0][-]{chapter.18}{Componentes}{part.3}% 122
-\BOOKMARK [0][-]{chapter.19}{Nodos}{part.3}% 123
-\BOOKMARK [0][-]{chapter.20}{Patrones GoF}{part.3}% 124
-\BOOKMARK [-1][-]{part.4}{IV Reflexiones}{}% 125
-\BOOKMARK [0][-]{chapter.21}{Conclusiones y Trabajos futuros}{part.4}% 126
+\BOOKMARK [1][-]{section.10.1}{Introducci\363n}{chapter.10}% 114
+\BOOKMARK [1][-]{section.10.2}{Punto de Vista de StakeHolder}{chapter.10}% 115
+\BOOKMARK [2][-]{subsection.10.2.1}{Descripci\363n}{section.10.2}% 116
+\BOOKMARK [3][-]{subsubsection.10.2.1.1}{Metamodelo}{subsection.10.2.1}% 117
+\BOOKMARK [3][-]{subsubsection.10.2.1.2}{Caso de Estudio}{subsection.10.2.1}% 118
+\BOOKMARK [1][-]{section.10.3}{Punto de Vista de Realizaci\363n de Objetivos}{chapter.10}% 119
+\BOOKMARK [2][-]{subsection.10.3.1}{Descripci\363n}{section.10.3}% 120
+\BOOKMARK [3][-]{subsubsection.10.3.1.1}{Metamodelo}{subsection.10.3.1}% 121
+\BOOKMARK [3][-]{subsubsection.10.3.1.2}{Caso de Estudio}{subsection.10.3.1}% 122
+\BOOKMARK [1][-]{section.10.4}{Punto de Vista de Contribuci\363n}{chapter.10}% 123
+\BOOKMARK [2][-]{subsection.10.4.1}{Descripci\363n}{section.10.4}% 124
+\BOOKMARK [3][-]{subsubsection.10.4.1.1}{Metamodelo}{subsection.10.4.1}% 125
+\BOOKMARK [3][-]{subsubsection.10.4.1.2}{Caso de Estudio}{subsection.10.4.1}% 126
+\BOOKMARK [1][-]{section.10.5}{Punto de Vista de Principios}{chapter.10}% 127
+\BOOKMARK [2][-]{subsection.10.5.1}{Descripci\363n}{section.10.5}% 128
+\BOOKMARK [3][-]{subsubsection.10.5.1.1}{Metamodelo}{subsection.10.5.1}% 129
+\BOOKMARK [3][-]{subsubsection.10.5.1.2}{Caso de Estudio}{subsection.10.5.1}% 130
+\BOOKMARK [1][-]{section.10.6}{Punto de Vista de Realizaci\363n de Requerimientos}{chapter.10}% 131
+\BOOKMARK [2][-]{subsection.10.6.1}{Descripci\363n}{section.10.6}% 132
+\BOOKMARK [3][-]{subsubsection.10.6.1.1}{Metamodelo}{subsection.10.6.1}% 133
+\BOOKMARK [3][-]{subsubsection.10.6.1.2}{Caso de Estudio}{subsection.10.6.1}% 134
+\BOOKMARK [1][-]{section.10.7}{Punto de Vista de Motivaci\363n}{chapter.10}% 135
+\BOOKMARK [2][-]{subsection.10.7.1}{Descripci\363n}{section.10.7}% 136
+\BOOKMARK [3][-]{subsubsection.10.7.1.1}{Metamodelo}{subsection.10.7.1}% 137
+\BOOKMARK [3][-]{subsubsection.10.7.1.2}{Caso de Estudio}{subsection.10.7.1}% 138
+\BOOKMARK [0][-]{chapter.11}{Migraci\363n}{part.2}% 139
+\BOOKMARK [1][-]{section.11.1}{Introducci\363n}{chapter.11}% 140
+\BOOKMARK [1][-]{section.11.2}{Punto de Vista de Proyecto}{chapter.11}% 141
+\BOOKMARK [2][-]{subsection.11.2.1}{Descripci\363n}{section.11.2}% 142
+\BOOKMARK [3][-]{subsubsection.11.2.1.1}{Metamodelo}{subsection.11.2.1}% 143
+\BOOKMARK [3][-]{subsubsection.11.2.1.2}{Caso de Estudio}{subsection.11.2.1}% 144
+\BOOKMARK [1][-]{section.11.3}{Punto de Vista de Migraci\363n}{chapter.11}% 145
+\BOOKMARK [2][-]{subsection.11.3.1}{Descripci\363n}{section.11.3}% 146
+\BOOKMARK [3][-]{subsubsection.11.3.1.1}{Metamodelo}{subsection.11.3.1}% 147
+\BOOKMARK [3][-]{subsubsection.11.3.1.2}{Caso de Estudio}{subsection.11.3.1}% 148
+\BOOKMARK [1][-]{section.11.4}{Punto de Vista de Migraci\363n e Implementaci\363n}{chapter.11}% 149
+\BOOKMARK [2][-]{subsection.11.4.1}{Descripci\363n}{section.11.4}% 150
+\BOOKMARK [3][-]{subsubsection.11.4.1.1}{Metamodelo}{subsection.11.4.1}% 151
+\BOOKMARK [3][-]{subsubsection.11.4.1.2}{Caso de Estudio}{subsection.11.4.1}% 152
+\BOOKMARK [-1][-]{part.3}{III Dise\361o}{}% 153
+\BOOKMARK [0][-]{chapter.12}{Casos de USo}{part.3}% 154
+\BOOKMARK [0][-]{chapter.13}{Interacciones}{part.3}% 155
+\BOOKMARK [0][-]{chapter.14}{Clases}{part.3}% 156
+\BOOKMARK [0][-]{chapter.15}{Estados}{part.3}% 157
+\BOOKMARK [0][-]{chapter.16}{Actividades}{part.3}% 158
+\BOOKMARK [0][-]{chapter.17}{Sistemas}{part.3}% 159
+\BOOKMARK [0][-]{chapter.18}{Componentes}{part.3}% 160
+\BOOKMARK [0][-]{chapter.19}{Nodos}{part.3}% 161
+\BOOKMARK [0][-]{chapter.20}{Patrones GoF}{part.3}% 162
+\BOOKMARK [-1][-]{part.4}{IV Reflexiones}{}% 163
+\BOOKMARK [0][-]{chapter.21}{Conclusiones y Trabajos futuros}{part.4}% 164

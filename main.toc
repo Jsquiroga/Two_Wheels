@@ -112,16 +112,54 @@
 \contentsline {subsubsection}{\numberline {9.7.1.1}Metamodelo}{52}{subsubsection.9.7.1.1}
 \contentsline {subsubsection}{\numberline {9.7.1.2}Caso de Estudio}{52}{subsubsection.9.7.1.2}
 \contentsline {chapter}{\numberline {10}Motivaci\IeC {\'o}n}{53}{chapter.10}
-\contentsline {chapter}{\numberline {11}Migraci\IeC {\'o}n}{54}{chapter.11}
-\contentsline {part}{III\hspace {1em}Dise\IeC {\~n}o}{55}{part.3}
-\contentsline {chapter}{\numberline {12}Casos de USo}{56}{chapter.12}
-\contentsline {chapter}{\numberline {13}Interacciones}{57}{chapter.13}
-\contentsline {chapter}{\numberline {14}Clases}{58}{chapter.14}
-\contentsline {chapter}{\numberline {15}Estados}{59}{chapter.15}
-\contentsline {chapter}{\numberline {16}Actividades}{60}{chapter.16}
-\contentsline {chapter}{\numberline {17}Sistemas}{61}{chapter.17}
-\contentsline {chapter}{\numberline {18}Componentes}{62}{chapter.18}
-\contentsline {chapter}{\numberline {19}Nodos}{63}{chapter.19}
-\contentsline {chapter}{\numberline {20}Patrones GoF}{64}{chapter.20}
-\contentsline {part}{IV\hspace {1em}Reflexiones}{65}{part.4}
-\contentsline {chapter}{\numberline {21}Conclusiones y Trabajos futuros}{66}{chapter.21}
+\contentsline {section}{\numberline {10.1}Introducci\IeC {\'o}n}{53}{section.10.1}
+\contentsline {section}{\numberline {10.2}Punto de Vista de StakeHolder}{53}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Descripci\IeC {\'o}n}{53}{subsection.10.2.1}
+\contentsline {subsubsection}{\numberline {10.2.1.1}Metamodelo}{54}{subsubsection.10.2.1.1}
+\contentsline {subsubsection}{\numberline {10.2.1.2}Caso de Estudio}{54}{subsubsection.10.2.1.2}
+\contentsline {section}{\numberline {10.3}Punto de Vista de Realizaci\IeC {\'o}n de Objetivos}{55}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Descripci\IeC {\'o}n}{55}{subsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.1.1}Metamodelo}{55}{subsubsection.10.3.1.1}
+\contentsline {subsubsection}{\numberline {10.3.1.2}Caso de Estudio}{55}{subsubsection.10.3.1.2}
+\contentsline {section}{\numberline {10.4}Punto de Vista de Contribuci\IeC {\'o}n}{56}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Descripci\IeC {\'o}n}{56}{subsection.10.4.1}
+\contentsline {subsubsection}{\numberline {10.4.1.1}Metamodelo}{57}{subsubsection.10.4.1.1}
+\contentsline {subsubsection}{\numberline {10.4.1.2}Caso de Estudio}{57}{subsubsection.10.4.1.2}
+\contentsline {section}{\numberline {10.5}Punto de Vista de Principios}{58}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Descripci\IeC {\'o}n}{58}{subsection.10.5.1}
+\contentsline {subsubsection}{\numberline {10.5.1.1}Metamodelo}{59}{subsubsection.10.5.1.1}
+\contentsline {subsubsection}{\numberline {10.5.1.2}Caso de Estudio}{59}{subsubsection.10.5.1.2}
+\contentsline {section}{\numberline {10.6}Punto de Vista de Realizaci\IeC {\'o}n de Requerimientos}{60}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Descripci\IeC {\'o}n}{60}{subsection.10.6.1}
+\contentsline {subsubsection}{\numberline {10.6.1.1}Metamodelo}{60}{subsubsection.10.6.1.1}
+\contentsline {subsubsection}{\numberline {10.6.1.2}Caso de Estudio}{61}{subsubsection.10.6.1.2}
+\contentsline {section}{\numberline {10.7}Punto de Vista de Motivaci\IeC {\'o}n}{61}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Descripci\IeC {\'o}n}{61}{subsection.10.7.1}
+\contentsline {subsubsection}{\numberline {10.7.1.1}Metamodelo}{62}{subsubsection.10.7.1.1}
+\contentsline {subsubsection}{\numberline {10.7.1.2}Caso de Estudio}{62}{subsubsection.10.7.1.2}
+\contentsline {chapter}{\numberline {11}Migraci\IeC {\'o}n}{63}{chapter.11}
+\contentsline {section}{\numberline {11.1}Introducci\IeC {\'o}n}{63}{section.11.1}
+\contentsline {section}{\numberline {11.2}Punto de Vista de Proyecto}{64}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Descripci\IeC {\'o}n}{64}{subsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.1.1}Metamodelo}{64}{subsubsection.11.2.1.1}
+\contentsline {subsubsection}{\numberline {11.2.1.2}Caso de Estudio}{65}{subsubsection.11.2.1.2}
+\contentsline {section}{\numberline {11.3}Punto de Vista de Migraci\IeC {\'o}n}{65}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Descripci\IeC {\'o}n}{65}{subsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.1.1}Metamodelo}{66}{subsubsection.11.3.1.1}
+\contentsline {subsubsection}{\numberline {11.3.1.2}Caso de Estudio}{66}{subsubsection.11.3.1.2}
+\contentsline {section}{\numberline {11.4}Punto de Vista de Migraci\IeC {\'o}n e Implementaci\IeC {\'o}n}{66}{section.11.4}
+\contentsline {subsection}{\numberline {11.4.1}Descripci\IeC {\'o}n}{66}{subsection.11.4.1}
+\contentsline {subsubsection}{\numberline {11.4.1.1}Metamodelo}{67}{subsubsection.11.4.1.1}
+\contentsline {subsubsection}{\numberline {11.4.1.2}Caso de Estudio}{67}{subsubsection.11.4.1.2}
+\contentsline {part}{III\hspace {1em}Dise\IeC {\~n}o}{68}{part.3}
+\contentsline {chapter}{\numberline {12}Casos de USo}{69}{chapter.12}
+\contentsline {chapter}{\numberline {13}Interacciones}{70}{chapter.13}
+\contentsline {chapter}{\numberline {14}Clases}{71}{chapter.14}
+\contentsline {chapter}{\numberline {15}Estados}{72}{chapter.15}
+\contentsline {chapter}{\numberline {16}Actividades}{73}{chapter.16}
+\contentsline {chapter}{\numberline {17}Sistemas}{74}{chapter.17}
+\contentsline {chapter}{\numberline {18}Componentes}{75}{chapter.18}
+\contentsline {chapter}{\numberline {19}Nodos}{76}{chapter.19}
+\contentsline {chapter}{\numberline {20}Patrones GoF}{77}{chapter.20}
+\contentsline {part}{IV\hspace {1em}Reflexiones}{78}{part.4}
+\contentsline {chapter}{\numberline {21}Conclusiones y Trabajos futuros}{79}{chapter.21}
