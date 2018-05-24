@@ -3,6 +3,7 @@
 Los patrones de diseño creacional resumen el proceso de creación de instancias. Ayudan a que un sistema sea independiente de cómo se crean, componen y representan sus objetos. Un patrón de creación de clases utiliza la herencia para variar la clase que está instanciada, mientras que un patrón de creación de objetos delegará la creación de instancias en otro objeto. Los patrones de creación se vuelven importantes a medida que los sistemas evolucionan para depender más de la composición de objetos que de la herencia de clase. Tal como sucede, el énfasis se aparta de la codificación rígida de un conjunto fijo de comportamientos para definir un conjunto más pequeño de comportamientos fundamentales que se pueden componer en cualquier cantidad de comportamientos más complejos. Por lo tanto, crear objetos con comportamientos particulares requiere algo más que simplemente crear una instancia de una clase. Hay dos temas recurrentes en estos patrones. Primero, todos encapsulan el conocimiento sobre las clases concretas que usa el sistema. En segundo lugar, ocultan cómo se crean y se crean las instancias de estas clases. Todo el sistema en general sabe acerca de los objetos es sus interfaces según lo definido por las clases abstractas. En consecuencia, los patrones creacionales le dan mucha flexibilidad en lo que se crea, quién lo crea, cómo se crea y cuándo. Le permiten configurar un sistema con objetos "producto" que varían ampliamente en estructura y funcionalidad. La configuración puede ser estática (es decir, especificada en tiempo de compilación) o dinámica (en tiempo de ejecución).\cite{gof}
 \subsection{Patrón Prototype}
 \subsubsection{Descripción}
+Este patrón tiene or objetivo crear objetos prediseñados sin conocer detalles de cómo crearlos, en diversos casos el costo de crear un objeto elevado, especialmente cuando se deben especificar un gran conjunto de productos. Para este contexto, resulta conveniente, clonar dicho objeto, aprovecharse de la estructura original y ajustarle un nuevo propósito. 
 
 \paragraph{Estructura}
 
@@ -15,9 +16,9 @@ Los patrones de diseño creacional resumen el proceso de creación de instancias
 \paragraph{Actores}
 
 \begin{itemize}
-	\item \textbf{Proxy}: Controla el acceso al sujeto real y puede ser responsable de crearlo y eliminarlo.
-	\item \textbf{Sujeto}:Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
-	\item \textbf{Sujeto Real}:Define el objeto real al cual representa el Proxy.
+	\item \textbf{PrototypeDeclara la interface del objeto que se clona.
+	\item \textbf{Concrete Prototype}: Implementa las operaciones para la clonación del objeto prototipo.
+	\item \textbf{Cliente}: Accede a la generación de los objetos clonados.
 \end{itemize}
 
 
@@ -33,6 +34,8 @@ Los patrones de diseño creacional resumen el proceso de creación de instancias
 
 \subsection{Patrón Fabrica Abstracta}
 \subsubsection{Descripción}
+Este patrón al igual que todos los de tipo creacional, tiene por objetivo, solucionar le problema de código duro, el cúal es un escenario típico donde se crean instrucciones y objetos que al cerrarlos, no pueden cambiarse.
+En dicho patrón, el cliente no quiere caer en código duro para la creación de productos concretos, por lo que lo hace a través de un conjunto de Fábrica Abstractas, que viene a ser la la envoltura, lo que facilita en gran medida, que cuando las familias de productos evoluciones, las familias se crean a través de fabricas abstractas.
 
 \paragraph{Estructura}
 
@@ -45,9 +48,12 @@ Los patrones de diseño creacional resumen el proceso de creación de instancias
 \paragraph{Actores}
 
 \begin{itemize}
-	\item \textbf{Proxy}: Controla el acceso al sujeto real y puede ser responsable de crearlo y eliminarlo.
-	\item \textbf{Sujeto}:Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
-	\item \textbf{Sujeto Real}:Define el objeto real al cual representa el Proxy.
+	\item \textbf{Fabrica Abstracta}: Declara una interfaz para operaciones que crean objetos de productos abstractos.
+	\item \textbf{Fabrica Concreta}: Implementa las operaciones para crear objetos productos concretos.
+	\item \textbf{Producto Abstracto}: Declara la interfaz para un tipo de objeto producto.
+	\item \textbf{Producto Concreto}: Define un objeto producto para que sea creado por la fabrica conrrespondiente. Implementa la interfaz Producto abstracto.
+	\item \textbf{Cliente}: Solo usa la interfaces declaradas por las clases Fabrica Abstracta y Producto Abstracto.
+	
 \end{itemize}
 
 
