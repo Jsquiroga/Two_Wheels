@@ -16,7 +16,7 @@ Este patrón tiene or objetivo crear objetos prediseñados sin conocer detalles 
 \paragraph{Actores}
 
 \begin{itemize}
-	\item \textbf{PrototypeDeclara la interface del objeto que se clona.
+	\item \textbf{Prototype}:Declara la interface del objeto que se clona.
 	\item \textbf{Concrete Prototype}: Implementa las operaciones para la clonación del objeto prototipo.
 	\item \textbf{Cliente}: Accede a la generación de los objetos clonados.
 \end{itemize}
@@ -102,7 +102,7 @@ Los patrones de comportamiento se relacionan con los algoritmos y la asignación
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Sate.pdf}
+	\includegraphics[width=.7\linewidth]{imagenes/Patrones/State.pdf}
 	\caption{Estructura del patrón State.\cite{gof}}	
 \end{figure}
 
@@ -168,9 +168,10 @@ Cuando una abstracción puede tener una de varias implementaciones posibles, la 
 \paragraph{Actores}
 
 \begin{itemize}
-	\item \textbf{Proxy}: Controla el acceso al sujeto real y puede ser responsable de crearlo y eliminarlo.
-	\item \textbf{Sujeto}:Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
-	\item \textbf{Sujeto Real}:Define el objeto real al cual representa el Proxy.
+	\item \textbf{Abstracción}: Define la interfaz de abstracción y mantiene una referencia a un objeto de tipo Implementador.
+	\item \textbf{Abstracción refinada}: Amplía la interfaz definida por la Abstracción.
+	\item \textbf{Implementador}: Define la interfaz para las clases de implementación. Esta interfaz no tiene que corresponderse exactamente con la interfaz de Abstracción, de hecho, las dos interfaces pueden ser bastante diferentes. Normalmente, la interfaz del implementador proporciona solo operaciones primitivas, y la abstracción define operaciones de nivel superior basadas en estas primitivas.
+	\item \textbf{implementador concreto}: El implementador concreto implementa la interfaz del implementador y define su implementación concreta.
 \end{itemize}
 
 
