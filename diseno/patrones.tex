@@ -147,7 +147,9 @@ Los patrones de comportamiento se relacionan con los algoritmos y la asignación
 Los patrones estructurales se refieren a cómo se componen las clases y los objetos para formar estructuras más grandes. Los patrones de clases estructurales utilizan la herencia para componer interfaces o implementaciones. Como ejemplo simple, considere cómo la herencia múltiple mezcla dos o más clases en una sola. El resultado es una clase que combina las propiedades de sus clases principales. Este patrón es particularmente útil para hacer que las bibliotecas de clases desarrolladas independientemente trabajen juntas. En lugar de componer interfaces o implementaciones, los patrones de objetos estructurales describen formas de componer objetos para realizar nuevas funcionalidades. La flexibilidad añadida de la composición de objetos proviene de la capacidad de cambiar la composición en tiempo de ejecución, lo que es imposible con la composición de clase estática.\cite{gof}
 \subsection{Patrón Bridge}
 
+
 \subsubsection{Descripción}
+Cuando una abstracción puede tener una de varias implementaciones posibles, la forma habitual de acomodarlas es utilizar la herencia. Una clase abstracta define la interfaz a la abstracción, y las subclases concretas la implementan de diferentes maneras. Pero este enfoque no siempre es lo suficientemente flexible. La herencia vincula una implementación a la abstracción de forma permanente, lo que dificulta la modificación, ampliación y reutilización de abstracciones e implementaciones de forma independiente.
 
 \paragraph{Estructura}
 
