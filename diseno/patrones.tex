@@ -196,6 +196,39 @@ Dentro del diseño del sistema, surge la necesidad de clasificar los objetos de 
 
 \section{Patrones Estructurales}
 Los patrones estructurales se refieren a cómo se componen las clases y los objetos para formar estructuras más grandes. Los patrones de clases estructurales utilizan la herencia para componer interfaces o implementaciones. Como ejemplo simple, considere cómo la herencia múltiple mezcla dos o más clases en una sola. El resultado es una clase que combina las propiedades de sus clases principales. Este patrón es particularmente útil para hacer que las bibliotecas de clases desarrolladas independientemente trabajen juntas. En lugar de componer interfaces o implementaciones, los patrones de objetos estructurales describen formas de componer objetos para realizar nuevas funcionalidades. La flexibilidad añadida de la composición de objetos proviene de la capacidad de cambiar la composición en tiempo de ejecución, lo que es imposible con la composición de clase estática.\cite{gof}
+
+\subsection{Patrón Adaptador}
+
+\subsubsection{Descripción}
+	El objetivo del patrón Adaptador es convertir la interfaz de una clase existente en la interfaz esperada por los clientes también existentes de modo que puedan trabajar de manera conjunta. Se trata de conferir a una clase existente una nueva interfaz para responder a las necesidades.
+
+\paragraph{Estructura}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=.8\linewidth]{imagenes/Patrones/Adaptador.pdf}
+	\caption{Estructura del patrón Adapatador.\cite{gof}}	
+\end{figure}
+
+\paragraph{Actores}
+
+\begin{itemize}
+	\item \textbf{Cliente}: Colabora con objetos que se ajustan a la interfaz Objetivo.
+	\item \textbf{Adaptable}: Define una interfaz existente  que necesita ser adaptada.
+	\item \textbf{Adaptador}: Adapta la interfaz del Adaptable a la interfaz objetivo.
+\end{itemize}	
+
+
+\subsubsection{Caso de Uso}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=.8\linewidth]{imagenes/Patrones/Adaptador_caso.pdf}
+	\caption{Estructura del patrón Adaptador caso de uso. \cite{gof}}	
+\end{figure}
+
+Para el caso de uso se dese realizar la transacción de dinero hacia la cuenta del parqueadero, el sistemas está diseñado para realizar transacciones en la moneda local (pesos) por lo cual la transacción no se puede llevar acabo directamente si se tiene una moneda extranjera (Divisa), para poder realizar la transacción la realizamos por medio de una clase adaptador la cual nos permitirá convertir el valor y finalmente realizar la transacción solicitada por la clase pagos.
+
 \subsection{Patrón Bridge}
 
 
@@ -230,6 +263,7 @@ Se hace clara la necesidad de identificar otros tipos de registros e integrarlos
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Bridge_caso.pdf}
 	\caption{Estructura del patrón Bridge caso de uso.\cite{gof}}	
 \end{figure}
+
 \subsection{Patrón Proxy}
 
 \subsubsection{Descripción}
@@ -247,7 +281,7 @@ Tiene como aplicación:
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=.7\linewidth]{imagenes/Patrones/estructura_Proxy.pdf}
+	\includegraphics[width=.8\linewidth]{imagenes/Patrones/Proxy.pdf}
 	\caption{Estructura del patrón Proxy.\cite{gof}}	
 \end{figure}
 
@@ -257,9 +291,16 @@ Tiene como aplicación:
 	\item \textbf{Proxy}: Controla el acceso al sujeto real y puede ser responsable de crearlo y eliminarlo.
 	\item \textbf{Sujeto}: Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
 	\item \textbf{Sujeto Real}: Define el objeto real al cual representa el Proxy.
-\end{itemize}
+\end{itemize}	
 
 
 \subsubsection{Caso de Uso}
+Para el caso de uso del patrón proxy se tiene un escenario practico muy común, como cualquier parqueadero \textit{Two Wheels} cobra a sus cliente por el servicio de seguridad, para esto se hace necesario que el cliente cancele el monto de dinero correspondiente al tiempo que utilizo el servicio, pero antes de esto el sistema genera una factura por medio de la cual finalmente se realiza el recaudo del dinero correspondiente al servicio.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=.8\linewidth]{imagenes/Patrones/Proxy_caso.pdf}
+	\caption{Estructura del patrón Proxy caso de uso.\cite{gof}}	
+\end{figure}
 
 
