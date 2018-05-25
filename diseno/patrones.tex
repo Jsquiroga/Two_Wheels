@@ -16,7 +16,7 @@ Este patrón tiene or objetivo crear objetos prediseñados sin conocer detalles 
 \paragraph{Actores}
 
 \begin{itemize}
-	\item \textbf{Prototype}:Declara la interface del objeto que se clona.
+	\item \textbf{Prototype}: Declara la interface del objeto que se clona.
 	\item \textbf{Concrete Prototype}: Implementa las operaciones para la clonación del objeto prototipo.
 	\item \textbf{Cliente}: Accede a la generación de los objetos clonados.
 \end{itemize}
@@ -64,12 +64,44 @@ En dicho patrón, el cliente no quiere caer en código duro para la creación de
 	\caption{Estructura del patrón Fabrica Abstracta caso de uso.\cite{gof}}	
 \end{figure}
 
+\subsection{Patrón Fabrica}
+\subsubsection{Descripción}
+Define una interfaz para crear un objeto, pero deja que las subclases decidan cual clase instanciar. El Método Fábrica, permite a una clase delegar la instanciación a las subclases. Define también un constructor “virtual”.
+El Método Fábrica realiza un diseño mas personalizable. Otros patrones de diseño requieren la creación de nuevas clases, en áreas donde el Método Fábrica solo requiere una nueva operación.
+
+
+\paragraph{Estructura}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Builder.pdf}
+	\caption{Estructura del patrón Fabrica.\cite{gof}}	
+\end{figure}
+
+\paragraph{Actores}
+
+\begin{itemize}
+	\item \textbf{Creador}: Esta clase(s) declaran el método fábrica, el cual retorna un objeto de tipo Producto. El Creador también puede definir una implementación por defecto del método fábrica que retorna un objeto por defecto del ProductoConcreto.
+	\item \textbf{Creador Concreto}: Esta clase sobrescribe el método fábrica para retornar una instancia del ProductoConcreto.
+	\item \textbf{Producto}: Esta clase define la interfaz de objetos que el método fábrica crea.
+	\item \textbf{Producto Concreto}: Esta clase implementa la interfaz del Producto.	
+\end{itemize}
+
+\subsubsection{Caso de Uso}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Builder_caso.pdf}
+	\caption{Estructura del patrón Fabrica caso de uso.\cite{gof}}	
+\end{figure}
+
+
+
 \section{Patrones de Comportamiento}
 Los patrones de comportamiento se relacionan con los algoritmos y la asignación de responsabilidades entre los objetos. Los patrones de comportamiento describen no solo patrones de objetos o clases sino también los patrones de comunicación entre ellos. Estos patrones caracterizan el flujo de control complejo que es difícil de seguir en el tiempo de ejecución. Desvían su enfoque del flujo de control para permitirle concentrarse en el modo en que los objetos están interconectados. Los patrones de objetos de comportamiento utilizan la composición de objetos en lugar de la herencia. Algunos describen cómo un grupo de objetos similares cooperan para realizar una tarea que ningún objeto individual puede llevar a cabo por sí mismo. Un tema importante aquí es cómo los objetos de pares se conocen unos a otros. Los pares podrían mantener referencias explícitas entre sí, pero eso aumentaría su acoplamiento. En el extremo, cada objeto sabría sobre cada otro.\cite{gof}
 \subsection{Patrón Strategy}
 
 \subsubsection{Descripción}
-
+Este patrón define una familia de algoritmos, encapsulándolos y haciéndolos intercambiables. Esto permite que el algoritmo varía independientemente del uso de los clientes.
 \paragraph{Estructura}
 
 \begin{figure}[th!]
@@ -81,9 +113,9 @@ Los patrones de comportamiento se relacionan con los algoritmos y la asignación
 \paragraph{Actores}
 
 \begin{itemize}
-	\item \textbf{Proxy}: Controla el acceso al sujeto real y puede ser responsable de crearlo y eliminarlo.
-	\item \textbf{Sujeto}:Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
-	\item \textbf{Sujeto Real}:Define el objeto real al cual representa el Proxy.
+	\item \textbf{Contexto}: Esta clase es configurada con un objeto de EstrategiaConcreta, mantiene una referencia al objeto Estrategia y puede definir una interfaz que permite que Estrategia acceda a su información.
+	\item \textbf{Estrategia}: Esta clase declara una interfaz común a todos los algoritmos soportados. El contexto utiliza está interfaz para llamar al algoritmo definido por la estrategia concreta.
+	\item \textbf{Estrategia Concreta}: Esta clase implementa el algoritmo utilizando la interfaz de estrategia
 \end{itemize}
 
 
@@ -97,6 +129,7 @@ Los patrones de comportamiento se relacionan con los algoritmos y la asignación
 \subsection{Patrón State}
 
 \subsubsection{Descripción}
+Este patrón permite que un objeto modifique su comportamiento cada vez que cambie su estado interno. Sirve para modelar el estado de máquinas de un objeto y con ello su ciclo de vida.
 
 \paragraph{Estructura}
 
@@ -109,9 +142,9 @@ Los patrones de comportamiento se relacionan con los algoritmos y la asignación
 \paragraph{Actores}
 
 \begin{itemize}
-	\item \textbf{Proxy}: Controla el acceso al sujeto real y puede ser responsable de crearlo y eliminarlo.
-	\item \textbf{Sujeto}:Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
-	\item \textbf{Sujeto Real}:Define el objeto real al cual representa el Proxy.
+	\item \textbf{Contexto}: Define la interfaz de interés para los clientes. Mantiene una instancia de una subclase de EstadoConcreto que define el estado actual.
+	\item \textbf{Estado}: Define una interfaz para encapsular el comportamiento asociado con un determinado estado del Contexto.
+	\item \textbf{Estado Concreto}: Cada subclase implementa un comportamiento asociado con un estado del Contexto.
 \end{itemize}
 
 
@@ -124,6 +157,8 @@ Los patrones de comportamiento se relacionan con los algoritmos y la asignación
 \subsection{Patrón Cadena de Responsabilidad}
 
 \subsubsection{Descripción}
+Este patrón evita acoplar el emisor de una petición a su receptor, dando a más de un objeto la posibilidad de responder a la petición. Encadena los objetos receptores y pasa la petción a través de la cadena hasta que es procesada por algún objeto.
+Este patrón tiene uso cuando más de un objeto puede resolver una petición, conformados además dinámicamente, definiendo el protocolo de respuesta.
 
 \paragraph{Estructura}
 
@@ -136,9 +171,9 @@ Los patrones de comportamiento se relacionan con los algoritmos y la asignación
 \paragraph{Actores}
 
 \begin{itemize}
-	\item \textbf{Proxy}: Controla el acceso al sujeto real y puede ser responsable de crearlo y eliminarlo.
-	\item \textbf{Sujeto}:Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
-	\item \textbf{Sujeto Real}:Define el objeto real al cual representa el Proxy.
+	\item \textbf{Manejador}: Define una interfaz para tratar las peticiones
+	\item \textbf{Manejador Concreto}: Trata las peticiones de la que es responsable. Puede acceder a su sucesor. Si el manejadorConcreto puede manejar la petición, lo hace; en caso contrario la reenvía a su sucesor.
+	\item \textbf{Cliente}: Inicializa la petición a un objeto ManejadorConcreto  de la cadena.
 \end{itemize}
 
 
@@ -167,11 +202,12 @@ Cuando una abstracción puede tener una de varias implementaciones posibles, la 
 
 \paragraph{Actores}
 
+
 \begin{itemize}
 	\item \textbf{Abstracción}: Define la interfaz de abstracción y mantiene una referencia a un objeto de tipo Implementador.
 	\item \textbf{Abstracción refinada}: Amplía la interfaz definida por la Abstracción.
 	\item \textbf{Implementador}: Define la interfaz para las clases de implementación. Esta interfaz no tiene que corresponderse exactamente con la interfaz de Abstracción, de hecho, las dos interfaces pueden ser bastante diferentes. Normalmente, la interfaz del implementador proporciona solo operaciones primitivas, y la abstracción define operaciones de nivel superior basadas en estas primitivas.
-	\item \textbf{implementador concreto}: El implementador concreto implementa la interfaz del implementador y define su implementación concreta.
+	\item \textbf{Implementador concreto}: El implementador concreto implementa la interfaz del implementador y define su implementación concreta.
 \end{itemize}
 
 
@@ -206,8 +242,8 @@ Tiene como aplicación:
 
 \begin{itemize}
 	\item \textbf{Proxy}: Controla el acceso al sujeto real y puede ser responsable de crearlo y eliminarlo.
-	\item \textbf{Sujeto}:Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
-	\item \textbf{Sujeto Real}:Define el objeto real al cual representa el Proxy.
+	\item \textbf{Sujeto}: Define la interfaz común para las clase SujetoReal y Proxy para que un Proxy se pueda usar en cualquier lugar donde se espere un SujetoReal.
+	\item \textbf{Sujeto Real}: Define el objeto real al cual representa el Proxy.
 \end{itemize}
 
 
