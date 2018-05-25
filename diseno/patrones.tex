@@ -23,13 +23,14 @@ Este patrón tiene or objetivo crear objetos prediseñados sin conocer detalles 
 
 
 \subsubsection{Caso de Uso}
-El patrón Prototype se implementará dentro del sistema a desarrollar como herramienta para la creación de los tipos de usuario definidos en los procesos de la organización. Para ello se definió la jerarquia de los usuarios Operario, Administrador y ClienteFinal provenientes de la clase abstracta TipoUsuario.
 
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Prototype_caso.pdf}
 	\caption{Estructura del patrón Prototype caso de uso.\cite{gof}}	
 \end{figure}
+
+El patrón Prototype se implementará dentro del sistema a desarrollar como herramienta para la creación de los tipos de usuario definidos en los procesos de la organización. Para ello se definió la jerarquia de los usuarios Operario, Administrador y ClienteFinal provenientes de la clase abstracta TipoUsuario.
 
 \subsection{Patrón Fabrica Abstracta}
 \subsubsection{Descripción}
@@ -57,13 +58,14 @@ En dicho patrón, el cliente no quiere caer en código duro para la creación de
 
 
 \subsubsection{Caso de Uso}
-Para la generación de reportes se implementará el patrón Fabrica Abstracta, cuyo modelo establece dos jerarquias de clases, las fabricas de los reportes de Usuarios y Espacios con sus equivalentes elementos de creación definidos en la siguiente jerarquia de clases las cuales establecen la generación de los objetos reportes para cada tipo de elemento Usuario y Espacio.
 
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Fabrica_caso.pdf}
 	\caption{Estructura del patrón Fabrica Abstracta caso de uso.\cite{gof}}	
 \end{figure}
+
+Para la generación de reportes se implementará el patrón Fabrica Abstracta, cuyo modelo establece dos jerarquias de clases, las fabricas de los reportes de Usuarios y Espacios con sus equivalentes elementos de creación definidos en la siguiente jerarquia de clases las cuales establecen la generación de los objetos reportes para cada tipo de elemento Usuario y Espacio.
 
 \subsection{Patrón Fabrica}
 \subsubsection{Descripción}
@@ -89,13 +91,14 @@ El Método Fábrica realiza un diseño mas personalizable. Otros patrones de dis
 \end{itemize}
 
 \subsubsection{Caso de Uso}
-Como herramienta para el control de los procesos de la organización se implementará el patrón Método Fabrica para la creación de las tarjetas que servirán como llave de acceso al lugar de aparcamiento. Para ello se establecerá dos jerarquias de clases, las clases creadoras de las tarjetas y los elementos concretos provenientes de la clase abstracta Tarjeta.
 
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Builder_caso.pdf}
 	\caption{Estructura del patrón Fabrica caso de uso.\cite{gof}}	
 \end{figure}
+
+Como herramienta para el control de los procesos de la organización se implementará el patrón Método Fabrica para la creación de las tarjetas que servirán como llave de acceso al lugar de aparcamiento. Para ello se establecerá dos jerarquias de clases, las clases creadoras de las tarjetas y los elementos concretos provenientes de la clase abstracta Tarjeta.
 
 
 
@@ -123,13 +126,15 @@ Este patrón define una familia de algoritmos, encapsulándolos y haciéndolos i
 
 
 \subsubsection{Caso de Uso}
-El patrón Estrategia será implementado en el control de los pagos de las tarifas por el uso de los espacios de aparcamiento, para esto, se define a la Factura como el contexto el cual hara uso del objeto pago que se requiera, PagoEfectivo o PagoCredito.
 
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Strategy_caso.pdf}
 	\caption{Estructura del patrón Strategy caso de uso.\cite{gof}}	
 \end{figure}
+
+El patrón Estrategia será implementado en el control de los pagos de las tarifas por el uso de los espacios de aparcamiento, para esto, se define a la Factura como el contexto el cual hara uso del objeto pago que se requiera, PagoEfectivo o PagoCredito.
+
 
 \subsection{Patrón State}
 
@@ -154,13 +159,14 @@ Este patrón permite que un objeto modifique su comportamiento cada vez que camb
 
 
 \subsubsection{Caso de Uso}
-Teniendo en cuenta que el elemento Espacio juega un papel fundamental dentro de los procesos de la organización, se plantea el uso del patrón Estado para el control de este elemento, permitiendo una correcta gestión de los recursos del modelo. Para cumplir este objetivo se definio la composición del elemeto Espacio con el estado en que este se encuentre, Disponible u Ocupado.
 
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/State_caso.pdf}
 	\caption{Estructura del patrón State caso de uso.\cite{gof}}	
 \end{figure}
+
+Teniendo en cuenta que el elemento Espacio juega un papel fundamental dentro de los procesos de la organización, se plantea el uso del patrón Estado para el control de este elemento, permitiendo una correcta gestión de los recursos del modelo. Para cumplir este objetivo se definio la composición del elemeto Espacio con el estado en que este se encuentre, Disponible u Ocupado.
 
 \subsection{Patrón Cadena de Responsabilidad}
 
@@ -186,13 +192,14 @@ Este patrón tiene uso cuando más de un objeto puede resolver una petición, co
 
 
 \subsubsection{Caso de Uso}
-Dentro del diseño del sistema, surge la necesidad de clasificar los objetos de cada tipo de usuario directo de la plataforma en el caso de los permisos que recibe cada para crear los distintos tipos de usuarios en el sistema. El Administrador posee derechos para crear cuentas para operarios y registro de clientes finales, sin embargo, el Operario solo posee autorización para registrar clientes finales al sistema.
 
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Cadena_caso.pdf}
 	\caption{Estructura del patrón Cadena de Responsabilidad caso de uso.\cite{gof}}	
 \end{figure}
+
+Dentro del diseño del sistema, surge la necesidad de clasificar los objetos de cada tipo de usuario directo de la plataforma en el caso de los permisos que recibe cada para crear los distintos tipos de usuarios en el sistema. El Administrador posee derechos para crear cuentas para operarios y registro de clientes finales, sin embargo, el Operario solo posee autorización para registrar clientes finales al sistema.
 
 \section{Patrones Estructurales}
 Los patrones estructurales se refieren a cómo se componen las clases y los objetos para formar estructuras más grandes. Los patrones de clases estructurales utilizan la herencia para componer interfaces o implementaciones. Como ejemplo simple, considere cómo la herencia múltiple mezcla dos o más clases en una sola. El resultado es una clase que combina las propiedades de sus clases principales. Este patrón es particularmente útil para hacer que las bibliotecas de clases desarrolladas independientemente trabajen juntas. En lugar de componer interfaces o implementaciones, los patrones de objetos estructurales describen formas de componer objetos para realizar nuevas funcionalidades. La flexibilidad añadida de la composición de objetos proviene de la capacidad de cambiar la composición en tiempo de ejecución, lo que es imposible con la composición de clase estática.\cite{gof}
@@ -255,14 +262,15 @@ Cuando una abstracción puede tener una de varias implementaciones posibles, la 
 
 
 \subsubsection{Caso de Uso}
-En el caso de del registro de los vehículos dentro del espacio de parqueo, se observa la presencia de dos tipos específicos de registros; existe un registro de ingreso del vehículo, que representa la anotación en el sistema del ingreso de un vehículo al establecimiento; y el registro de salida de dicho vehículo.
-Se hace clara la necesidad de identificar otros tipos de registros e integrarlos con dichos elementos como podría ser el registro de una eventualidad o afectación a alguno de los vehículos parqueados, de modo que para ello la implementación de este patrón es fundamental.
 
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Bridge_caso.pdf}
 	\caption{Estructura del patrón Bridge caso de uso.\cite{gof}}	
 \end{figure}
+
+En el caso de del registro de los vehículos dentro del espacio de parqueo, se observa la presencia de dos tipos específicos de registros; existe un registro de ingreso del vehículo, que representa la anotación en el sistema del ingreso de un vehículo al establecimiento; y el registro de salida de dicho vehículo.
+Se hace clara la necesidad de identificar otros tipos de registros e integrarlos con dichos elementos como podría ser el registro de una eventualidad o afectación a alguno de los vehículos parqueados, de modo que para ello la implementación de este patrón es fundamental.
 
 \subsection{Patrón Proxy}
 
@@ -295,7 +303,6 @@ Tiene como aplicación:
 
 
 \subsubsection{Caso de Uso}
-Para el caso de uso del patrón proxy se tiene un escenario practico muy común, como cualquier parqueadero \textit{Two Wheels} cobra a sus cliente por el servicio de seguridad, para esto se hace necesario que el cliente cancele el monto de dinero correspondiente al tiempo que utilizo el servicio, pero antes de esto el sistema genera una factura por medio de la cual finalmente se realiza el recaudo del dinero correspondiente al servicio.
 
 \begin{figure}[th!]
 	\centering
@@ -303,4 +310,6 @@ Para el caso de uso del patrón proxy se tiene un escenario practico muy común,
 	\caption{Estructura del patrón Proxy caso de uso.\cite{gof}}	
 \end{figure}
 
+
+Para el caso de uso del patrón proxy se tiene un escenario practico muy común, como cualquier parqueadero \textit{Two Wheels} cobra a sus cliente por el servicio de seguridad, para esto se hace necesario que el cliente cancele el monto de dinero correspondiente al tiempo que utilizo el servicio, pero antes de esto el sistema genera una factura por medio de la cual finalmente se realiza el recaudo del dinero correspondiente al servicio.
 
