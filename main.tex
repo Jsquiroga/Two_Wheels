@@ -1,114 +1,127 @@
-\documentclass[openany,12pts,letterpaper,oneside,onecolumn]{book}
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
 
-\usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage[hidelinks]{hyperref}
-\usepackage{amssymb}
-\usepackage{listings}
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage[table,xcdraw]{xcolor}
-\usepackage{lscape}
+%----------------------------------------------------------------------------------------
+
 \usepackage{longtable}
-
-
-%codigo en java
-\lstdefinestyle{customc}{
-	belowcaptionskip=1\baselineskip,
-	breaklines=true,
-	frame=L,
-	xleftmargin=\parindent,
-	language=Java,
-	showstringspaces=false,
-	basicstyle=\footnotesize\ttfamily,
-	keywordstyle=\bfseries\color{green!40!black},
-	commentstyle=\itshape\color{purple!40!black},
-	identifierstyle=\color{blue},
-	stringstyle=\color{orange},
-}
-\lstdefinestyle{customasm}{
-	belowcaptionskip=1\baselineskip,
-	frame=L,
-	xleftmargin=\parindent,
-	language=[x86masm]Assembler,
-	basicstyle=\footnotesize\ttfamily,
-	commentstyle=\itshape\color{purple!40!black},
-}
-
-\lstset{escapechar=@,style=customc}
-
-%parrafos
-\makeatletter
-\newcounter{subsubparagraph}[subparagraph]
-\renewcommand\thesubsubparagraph{%
-	\thesubparagraph.\@arabic\c@subsubparagraph}
-\newcommand\subsubparagraph{%
-	\@startsection{subsubparagraph}    % counter
-	{6}                              % level
-	{\parindent}                     % indent
-	{3.25ex \@plus 1ex \@minus .2ex} % beforeskip
-	{-1em}                           % afterskip
-	{\normalfont\normalsize\bfseries}}
-\newcommand\l@subsubparagraph{\@dottedtocline{6}{10em}{5em}}
-\newcommand{\subsubparagraphmark}[1]{}
-\makeatother
-\setcounter{tocdepth}{5}
-\setcounter{secnumdepth}{5}
+\usepackage{array}
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
 
 
 \begin{document}
-
-\author{  Daniela Córdoba Acosta\\
-	Johan Quiroga Torres\\
-	Santiago Jiménez Bonilla
-}
-\title{	TWO WHEELS PARKING\\
-	Sistema de Gestión de biciparqueaderos}
-
-\date{Mayo 2018}
-
-\frontmatter
-\maketitle
-\tableofcontents
-
-\mainmatter
-
-\part{Contexto}
-\include{contexto/proyecto}
-
-\include{contexto/metodologia}
-
-\part{Arquitecura}
-\include{arquitecura/Organizacion}
-\include{arquitecura/ADM}
-\include{arquitecura/negocio}
-\include{arquitecura/aplicacion}
-\include{arquitecura/tecnologia}
-\include{arquitecura/motivacion}
-\include{arquitecura/migracion}
-
-\part{Diseño}
-\include{diseno/casos}
-\include{diseno/interacciones}
-\include{diseno/clases}
-\include{diseno/estados}
-\include{diseno/actividades}
-\include{diseno/sistemas}
-\include{diseno/componentes}
-\include{diseno/nodos}
-
-\include{diseno/patrones}
-
-\part{Reflexiones}
-\include{reflexiones/conclusiones}
-\include{reflexiones/trabajos futuros}
-\include{anexos/anexos}
-
+	
+	----------------------------------------------------------------------------------------
+	%	TITLE PAGE
+	%----------------------------------------------------------------------------------------
+	
+	\begingroup
+	\thispagestyle{empty}
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background}};
+	\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Two Wheels Parking\\[10pt] % Book title
+			{\Large Daniela Córdoba}\\[1pt] % Subtitle
+			{\Large Johan Quiroga}\\[1pt] % Subtitle
+			{\Large Santiago Jiménez}\\[20pt] % Subtitle						
+			{\huge Dr. Sandro Bolaños}}}; % Author name
+	\end{tikzpicture}
+	\vfill
+	\endgroup
+	
+	%----------------------------------------------------------------------------------------
+	%	COPYRIGHT PAGE
+	%----------------------------------------------------------------------------------------
+	
+	\newpage
+	~\vfill
+	\thispagestyle{empty}
+	
+	\noindent Copyright \copyright\ 2018 Daniela Córdoba, Johan Quiroga, Santiago Jiménez\\ % Copyright notice
+	
+	\noindent \textsc{Publicado por Universidad Distrital Francisco José de Caldas}\\ % Publisher
+	
+	\noindent \textsc{Twowheels.com}\\ % URL
+	
+		
+	\noindent \textit{primera impresion, Junio 2018} % Printing/edition date
+	
+	%----------------------------------------------------------------------------------------
+	%	TABLE OF CONTENTS
+	%----------------------------------------------------------------------------------------
+	
+	%\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
+	
+	\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+	
+	\pagestyle{empty} % No headers
+	
+	\tableofcontents % Print the table of contents itself
+	
+	\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+	
+	\pagestyle{fancy} % Print headers again
+	
+	%----------------------------------------------------------------------------------------
+	%	PART
+	%----------------------------------------------------------------------------------------
+	
+	\part{Contexto}
+	\include{contexto/proyecto}
+	
+	\include{contexto/metodologia}
+	
+	\part{Arquitecura}
+	\include{arquitecura/Organizacion}
+	\include{arquitecura/ADM}
+	\include{arquitecura/negocio}
+	\include{arquitecura/aplicacion}
+	\include{arquitecura/tecnologia}
+	\include{arquitecura/motivacion}
+	\include{arquitecura/migracion}
+	
+	\part{Diseño}
+%	\include{diseno/casos}
+%	\include{diseno/interacciones}
+%	\include{diseno/clases}
+%	\include{diseno/estados}
+%	\include{diseno/actividades}
+%	\include{diseno/sistemas}
+%	\include{diseno/componentes}
+%	\include{diseno/nodos}
+	\include{diseno/patrones}
+	
+%	\part{Reflexiones}
+%	\include{bibliografias}
+%	\include{reflexiones/conclusiones}
+%	\include{reflexiones/trabajos futuros}
+%	\include{anexos/anexos}
+	
+		%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
 \backmatter
-% bibliography, glossary and index would go here.
 \bibliographystyle{plain}
-\bibliography{bibliografia/libros,bibliografia/articulos}
+\bibliography{bibliografia/libros}
 
+%
+%\chapter*{Bibliography}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}}
+%\section*{Books}
+%\addcontentsline{toc}{section}{Books}
+%\printbibliography[heading=bibempty,type=book]
+%\section*{Articles}
+%\addcontentsline{toc}{section}{Articles}
+%\printbibliography[heading=bibempty,type=article]	
+
+	%----------------------------------------------------------------------------------------
+	%	INDEX
+	%----------------------------------------------------------------------------------------
+	
+%	\cleardoublepage
+%	\phantomsection
+%	\setlength{\columnsep}{0.75cm}
+%	\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+%	\printindex
+	
+	%----------------------------------------------------------------------------------------
+
+	
 \end{document}

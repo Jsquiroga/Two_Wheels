@@ -1,5 +1,3 @@
-\chapter{Tecnología}
-
 \chapter{Capa de Tecnologia}
 
 \section{Introducción}
@@ -11,7 +9,7 @@ Tal como mencionamos anteriormente, en nuestra capa de aplicación se caracteriz
 El punto de vista de infraestructura contiene los elementos de hardware y de software correspondientes a la infraestructura que soporta la capa de aplicación, en este diagrama podemos observar elementos ales como dispositivos físicos, redes o sistemas de software tales como: Bases de datos o sistemas operativos.
 
 \subsubsection{Metamodelo}
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Metamodelos/Tecnologia/meta_infraestructura.PDF}
 	\caption{Metamodelo: Punto de Vista de Infraestrucutra.}
@@ -22,7 +20,7 @@ El punto de vista de infraestructura contiene los elementos de hardware y de sof
 El sistemá que se pretende desarrollar estará distribuido de manera local, es decir, se dispondrá de un unico dispositivo (computador) que desplegará la aplicación haciendo uso del sistema operativo, un gestor de bases de datos y un dispositivo de lectura externo.
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Caso_Estudio/Tecnologia/infraestructura.PDF}
 	\caption{Caso de estudio: Punto de vista de Infraesructura.}
@@ -34,7 +32,7 @@ El sistemá que se pretende desarrollar estará distribuido de manera local, es 
 El punto de vista de Uso de Infraestructura muestra como las aplicaciones están soportadas por una infraestructura de hardware y software en la que los servicios de infraestructura  son ofrecidos por los dispositivos mientras que las  redes y los sistemas de software proporcionan las aplicaciones. Este punto de vista juega un papel importante en el análisis del rendimiento y la escalabilidad, ya que relaciona la infraestructura física con el mundo lógico de las aplicaciones. Es muy útil para determinar el rendimiento y los requisitos de calidad en la infraestructura en función de las demandas de las distintas aplicaciones que lo utilizan.
 
 \subsubsection{Metamodelo}
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Metamodelos/Tecnologia/meta_uso_infraestructura.PDF}
 	\caption{Metamodelo: Punto de Vista de Uso de Infraestrucutra.}
@@ -44,7 +42,7 @@ El punto de vista de Uso de Infraestructura muestra como las aplicaciones están
 
 \subsubsection{Caso de Estudio}
 En el siguiente punto de vista podemos observar el comportamiento general que tendra el sistema teniendo en cuenta los componentes de hardware que para este caso es un unico dispositivo y los componentes de software que han sido descritos anteriormente, estos componentes de software serán los encargados de gestionar los procesos internos y logicos del sistema, gestíon de los pagos, gestión de los espacios de parqueo, generación de estadisticas y la gestión de los usuarios.
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Caso_Estudio/Tecnologia/uso_infraestructura.PDF}
 	\caption{Caso de estudio: Punto de Vista de Uso de Infraesructura.}
@@ -57,7 +55,7 @@ En el siguiente punto de vista podemos observar el comportamiento general que te
 El punto de vista de organización e implementación muestra como se implementan una o mas aplicaciones o componentes en la insfraestructura. Esto se comprende como el mapeo de aplicaciones lógicas a su respectivos componente o artefacto físico, de igual manera se puede evidenciar un mapeo de  la información que utilizan estas.
 
 \subsubsection{Metamodelo}
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Metamodelos/Tecnologia/meta_organizacion_implementacion.PDF}
 	\caption{Metamodelo: Punto de Vista de Organización e Implementación.}
@@ -67,7 +65,7 @@ El punto de vista de organización e implementación muestra como se implementan
 \subsubsection{Caso de Estudio}
 El sistema ha desarrollar estará compuesto principalmente por cuatro componentes de software que soportarán todos los procesos del sistema. Como unico componente fisico se tendrá un dispositivo que desplegara la aplicación a partir de componente Two Wheels Digital el cuál contendrá los componentes de software anteriormente mencionados.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Caso_Estudio/Tecnologia/organizacion_implementacion.PDF}
 	\caption{Caso de estudio: Punto de Vista de Organización e Implementación.}
@@ -80,7 +78,7 @@ El sistema ha desarrollar estará compuesto principalmente por cuatro componente
 El punto de vista de la estructura de información muestra la estructura de la información utilizada en la: empresa, proceso o una aplicación comercial específica; esto en términos de tipos de datos o estructuras de clases (orientadas a objetos). Además, puede mostrar cómo la información se representa en el nivel de negocio, en el nivel de aplicación mediante las estructuras de datos utilizadas allí, y cómo estas se asignan a la infraestructura subyacente mediante artefactos.
 
 \subsubsection{Metamodelo}
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{imagenes/Metamodelos/Tecnologia/meta_estructura_informacion.PDF}
 	\caption{Metamodelo: Punto de Vista de Estructura de Información.}
@@ -90,7 +88,7 @@ El punto de vista de la estructura de información muestra la estructura de la i
 \subsubsection{Caso de Estudio}
 Teniendo en cuenta que la función principal de la empresa es la renta de espacios de parqueo, se tienen como objetos principales el Establecimiento, Espacio, Usuario y Cliente, estos objetos soportarán todos los procedimientos requeridos por la organización y serán desplegados por la aplicación mediante el objeto Two Wheels Digital, en conjunto con el objeto Espacios Disponibles que permitirán realizar el debido control del servicio ofrecido.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Caso_Estudio/Tecnologia/estructura_informacion.PDF}
 	\caption{Caso de estudio: Punto de Vista de Estructura de Información.}
@@ -103,7 +101,7 @@ Teniendo en cuenta que la función principal de la empresa es la renta de espaci
 El punto de vista de Realización del servicio se utiliza para mostrar cómo uno o más servicios de negocio se realizan mediante los procesos subyacentes (y, en ocasiones, mediante los componentes de la aplicación). Por lo tanto, forma el puente entre el punto de vista del producto y la vista del proceso de negocios. Proporciona una "vista desde el exterior" en uno o más procesos comerciales.
 
 \subsubsection{Metamodelo}
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Metamodelos/Tecnologia/meta_realizacion_servicio.PDF}
 	\caption{Metamodelo: Punto de Vista de Realización del Servicio.}
@@ -112,7 +110,7 @@ El punto de vista de Realización del servicio se utiliza para mostrar cómo uno
 
 \subsubsection{Caso de Estudio}
 El Cliente como el rol que solicita el servicio de renta del espacio será el que disparará las funciones establecidas dentro del protocolo de la organización. Estas funciones estarán asociadas al rol Operario, quien tendrá la capacidad de ejecutar dichas funciones a través de los componentes respectivos para cada función.
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{imagenes/Caso_Estudio/Tecnologia/realizacion_servicio.PDF}
 	\caption{Caso de estudio: Punto de Vista de Realizacion del Servicio.}
@@ -126,7 +124,7 @@ El punto de vista en capas representa varias capas y aspectos de una arquitectur
 
 \subsubsection{Caso de Estudio}
 El sistemá ha desarrollar estará distribuido en tres capas, las cuales contendran los componentes del sistema de acuerdo a su ambito con el fin de visualizar el comportamiento de éste de una manera mas efectiva. Dentro de la capa de Infraestructura se encuentra el dispositivo dónde se desplegará el sistema, este dispositivo hará uso de los componentes Gestor de Usuarios, Gestor de Espacios, Estadísticas y Pagos, los cuales se encuentran en la capa de aplicación debido a su significado lógico, es decir, son componentes de software, en la capa de Negocio se encuentran las funciones principales del sistema, la Solicitud del Espacio y la devolución de este, finalmente se optó por mostrar el servicio general en otra capa de Negocio para permitir una lectura y comprensión mucho mas sencilla del punto de vista.
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{imagenes/Caso_Estudio/Tecnologia/capas_infraestructura.PDF}
 	\caption{Caso de estudio: Punto de Vista de Capas.}

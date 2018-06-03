@@ -10,21 +10,21 @@ TOGAF esta compuesto por 3 partes principales el método de desarrollo ADM (Arch
 	\item Arquitectura Tecnológica
 \end{itemize}
 ADM muestra estos niveles de abstracción en diferentes fases que determinan la linea base (baseline) y el final del nivel de abstracción (target), donde el analisis de brecha (gap analysis - figura 5.1) permite conocer el estado final de la arquitectura despues de una o varias iteraciones.
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\textwidth]{imagenes/Captura.PNG}
+	\includegraphics[width=0.5\textwidth]{imagenes/Captura.PNG}
 	\caption{Analisis de Brecha -Iteraciones ADM}
 	\label{fig:gap_analysis}
 \end{figure}
 
-Este análisis mide los objetivos de arquitectura y el grado de la madurez alcanzados por la organización
+Este análisis mide los objetivos de arquitectura y el grado de la madurez alcanzados por la organización.
 
 ADM consta de 8  niveles o etapas y un paso preliminar donde se describen las actividades iniciales, principios y capacidades de la arquitectura objetivo, también se realiza una adaptación del marco de trabajo para ajustarlo a las necesidades de la organización.
 \cite{FGuti}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\textwidth]{imagenes/Captura1.PNG}
+	\includegraphics[width=0.4\textwidth]{imagenes/Captura1.PNG}
 	\caption{Etapas del Método ADM}
 	\label{fig:gap_analysis}
 \end{figure}
@@ -38,7 +38,7 @@ Estas oportunidades y soluciones se identifican e incluyen en el plan de migraci
 \subsection{Resumen: capa de negocio}
 
 \begin{center}
-	\begin{longtable}[H]{|p{5cm}|p{6cm}|p{3cm}|}
+	\begin{longtable}{|p{5cm}|p{6cm}|p{3cm}|}
 		\hline
 		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
 		\hline
@@ -52,8 +52,12 @@ Estas oportunidades y soluciones se identifican e incluyen en el plan de migraci
 		
 		%inicio contenido tabla 
 		
-		\centering \textbf{Actor de negocio}\\ \textbf{(Business actor)} & Una entidad organizativa que es capaz de realizar el comportamiento.         & 
-		\raisebox{-\totalheight}{\includegraphics[scale=0.36]{imagenes/lenguaje/Bussines/actor}}\\ 		\hline         
+		\centering 
+		\textbf{Actor de negocio}\\ 
+		\textbf{(Business actor)} 
+		& Una entidad organizativa que es capaz de realizar el comportamiento.         & 
+		\raisebox{-\totalheight}{\includegraphics[scale=0.36]{imagenes/lenguaje/Bussines/actor}}\\
+		\hline         
 		
 		
 		\centering \textbf{Papel del negocio}\\ \textbf{(Business role)} & La responsabilidad de realizar un comportamiento específico, al cual un actor puede ser asignado.&\raisebox{-\totalheight}{\includegraphics[scale=0.36,]{imagenes/lenguaje/Bussines/role}}\\
@@ -123,132 +127,8 @@ Estas oportunidades y soluciones se identifican e incluyen en el plan de migraci
 \end{center}
 
 \subsection{Resumen: capa de aplicación}
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|p{5cm}|p{6cm}|p{3.3cm}|}
-		\hline
-		\textbf{Concepto}                                                           & \multicolumn{1}{c|}{\textbf{Definición}}                                                             & \textbf{Notación} \\ \hline
-		\begin{tabular}[c]{@{}c@{}}\textbf{Componente de Aplicación}\\ \textbf{(Application Component)}\end{tabular} & Una parte modular, desplegable y reemplazable de un sistema de software que encapsula su comportamiento y datos y los expone a través de un conjunto de interfaces.    & 	\raisebox{-\totalheight}{\includegraphics[scale=0.36,]{imagenes/lenguaje/Aplication/componentApp}}
-		\\ \hline
-		\begin{tabular}[c]{@{}c@{}}\textbf{Colaboración de Aplicación}\\ \textbf{(Application
-				collaboration)}\end{tabular}            & 
-		Un agregado de dos o más componentes de aplicación que trabajan juntos para realizar un comportamiento colectivo.                         & 
-		\raisebox{-0,63\totalheight}{\includegraphics[scale=0.28,]{imagenes/lenguaje/Aplication/collaborationApp}}   \\ \hline
-		\begin{tabular}[c]{@{}c@{}}\textbf{Interfaz de Aplicación}\\ \textbf{(Application interface)}\end{tabular}                  & Un punto de acceso donde un servicio de aplicación está disponible para un usuario u otro componente de aplicación &  \raisebox{-0,63\totalheight}{\includegraphics[scale=0.36,]{imagenes/lenguaje/Aplication/interfaceApp}} 
-		\\ \hline
-		\begin{tabular}[c]{@{}c@{}}\textbf{Objeto de Datos}\\ \textbf{(Data Object)}\end{tabular}                      & Un elemento pasivo adecuado para el procesamiento automatizado.                                  & 
-		\raisebox{-0,63\totalheight}{\includegraphics[scale=0.36,]{imagenes/lenguaje/Aplication/dataObjectApp}}
-		\\ \hline
-		\begin{tabular}[c]{@{}c@{}}\textbf{Función de Aplicación}\\ \textbf{(Function Application)}\end{tabular}                      & 
-		Un elemento de comportamiento que agrupa el comportamiento automatizado que puede ser realizado por un componente de aplicación.                                & \raisebox{-0,63\totalheight}{\includegraphics[scale=0.36,]{imagenes/lenguaje/Aplication/functionApp}}
-		\\ \hline
-		\begin{tabular}[c]{@{}c@{}}\textbf{Interacción de Aplicación}\\ \textbf{(Application
-				interaction)}\end{tabular}                      & 
-		Un elemento de comportamiento que describe el comportamiento de una colaboración de aplicación                                  & 
-		\raisebox{-0,63\totalheight}{\includegraphics[scale=0.36,]{imagenes/lenguaje/Aplication/interactionApp}}
-		\\ \hline
-		\begin{tabular}[c]{@{}c@{}}\textbf{Servicio de Aplicación}\\ \textbf{(Application
-				Service)}\end{tabular}                      & 
-		Un servicio que expone un comportamiento automatizado                                 & \raisebox{-0,63\totalheight}{\includegraphics[scale=0.36,]{imagenes/lenguaje/Aplication/serviceApp}}
-		\\ \hline
-	\end{tabular}
-	\caption{Capa de Aplicación}
-	\label{capaAplicacion}
-\end{table}
-
-\subsection{Resumen: capa de motivación}
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|p{3cm}|p{6cm}|p{5,5cm}|}
-		\hline
-		\textbf{Concepto} & \multicolumn{1}{c|}{\textbf{Definición}}                                                             & \textbf{Notación} \\ \hline
-		
-		\begin{tabular}[c]{@{}c@{}}
-			\\Interesados \\ (Stakeholder)
-		\end{tabular} 
-		& El rol de un individuo, equipo u organización (o clases de ellos) que representa sus intereses o preocupaciones, relativas al resultado de la arquitectura.
-		& \raisebox{-0.75\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Motivational/stakeholder}}
-		\\ \hline
-		
-		\begin{tabular}[c]{@{}c@{}}
-			\\Conductor\\ (Driver)
-		\end{tabular} 
-		& Algo que crea, motiva y alimenta el cambio en una organización. 
-		
-		& \raisebox{-0,55\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Motivational/driver}}
-		\\ \hline
-		
-		\begin{tabular}[c]{@{}c@{}}
-			\\Evaluación\\ (Assessment)
-		\end{tabular}                  
-		& El resultado de algunas evaluaciones de algunos conductores. 
-		
-		& \raisebox{-0,65\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Motivational/assessment}}
-		\\ \hline
-		
-		\begin{tabular}[c]{@{}c@{}}
-			\\Gol\\ (Goal)
-		\end{tabular}                      
-		& Un estado final que una parte interesada desea lograr.    
-		
-		& \raisebox{-0,55\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Motivational/goal}}
-		\\ \hline
-		
-		\begin{tabular}[c]{@{}c@{}}
-			\\Requisito\\ (Requirement)
-		\end{tabular}                      
-		&  Una declaración de necesidad que debe ser realizada por un sistema. 
-		
-		& \raisebox{-0,55\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Motivational/requirement}}
-		\\ \hline
-		
-		\begin{tabular}[c]{@{}c@{}}
-			\\Restricción\\(Constraint)
-		\end{tabular}                      
-		& Una restricción de la forma en que se realiza un sistema.
-		
-		& \raisebox{-0,55\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Motivational/constraint}}
-		\\ \hline
-		
-		\begin{tabular}[c]{@{}c@{}}
-			\\Principio\\ (Principle)
-		\end{tabular}                      
-		& Una propiedad normativa de todos los sistemas en un contexto dado, o la forma en que se realizan.                         
-		& \raisebox{-0,66\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Motivational/principle}}
-		\\ \hline
-	\end{tabular}
-	\caption{Capa de Motivación}
-	\label{capaMotivacion}
-\end{table}
-
-\subsection{Resumen: capa de proyecto}
-\begin{table}[H]
-	
-	\centering
-	\begin{tabular}{|p{4cm}|p{5cm}|p{4cm}|}
-		\hline
-		\textbf{Concepto}                                                           & \multicolumn{1}{c|}{\textbf{Definición}}                                                             & \textbf{Notación} \\ \hline
-		\begin{tabular}[c]{@{}c@{}}Paquete de Trabajo\\ (Work Package)\end{tabular} & Una serie de acciones diseñadas para lograr una meta única dentro de un tiempo especificado.         & 
-		\raisebox{-\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Proyect/WorkPackage.png}}
-		\\ \hline
-		\begin{tabular}[c]{@{}c@{}}Entregable\\ (Derivable)\end{tabular}            & Un resultado definido con precisión de un paquete de trabajo (work package).                         & 
-		\raisebox{-\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Proyect/Deliverable.png}}
-		\\ \hline
-		\begin{tabular}[c]{@{}c@{}}Meseta\\ (Plateau)\end{tabular}                  & Un estado relativamente estable de la arquitectura que existe durante un período de tiempo limitado. &  
-		\raisebox{-\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Proyect/Plateau.png}}
-		\\ \hline
-		\begin{tabular}[c]{@{}c@{}}Brecha\\ (Gap)\end{tabular}                      & Resultado de un análisis de la brecha entre dos mesetas (plateaus).                                  &  
-		\raisebox{-\totalheight}{\includegraphics[scale=0.36,]			{imagenes/lenguaje/Proyect/Gap.png}}
-		\\ \hline
-	\end{tabular}
-	\caption{Capa de Proyecto}
-	\label{capa-proyecto}
-\end{table}
-
-
-\subsection{Resumen: capa de tecnologia}
 \begin{center}
-\begin{longtable}[H]{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
+\begin{longtable}{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
 	
 		\hline
 		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
@@ -261,57 +141,207 @@ Estas oportunidades y soluciones se identifican e incluyen en el plan de migraci
 		\hline
 		\endhead
 		
-		Nodo        
-		& \vspace{1mm} Un recurso computacional sobre el cual 
-		los artefactos pueden ser almacenados o
-		desplegados para su ejecución.        
-		&\includegraphics[width=30mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/nodo}  \\ \hline
+		Componente de Aplicación & 
+		\vspace{1mm} Una parte modular, desplegable y reemplazable de un sistema de software que encapsula su comportamiento y datos y los expone a través de un conjunto de interfaces. & 
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/Aplication/componentApp}\\ 
+		\hline
 		
-		Dispositivo 
-		& \vspace{1mm} Un recurso de hardware en el que los
-		artefactos se pueden almacenar o desplegar 
-		para su ejecución.              
-		& \includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/dispositivo}  \\ \hline
+		Colaboración de Aplicación & 
+		\vspace{1mm} 
+		 Un agregado de dos o más componentes de aplicación que trabajan juntos para realizar un comportamiento colectivo.& 
+		\includegraphics[width=35mm,trim=0 0 0 -6mm]{imagenes/lenguaje/Aplication/collaborationApp}\\ 
+		\hline
 		
-		Red         
-		&\vspace{1mm} Un medio de comunicación entre dos o
-		más dispositivos.               
-		& \includegraphics[width=25mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/red}  \\ \hline
+		Interfaz de Aplicación &
+		\vspace{1mm} Un punto de acceso donde un servicio de aplicación está disponible para un usuario u otro componente de aplicación &  
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/Aplication/interfaceApp}\\ 
+		\hline
+				
+		Objeto de Datos &
+		\vspace{1mm} Un elemento pasivo adecuado para el procesamiento automatizado.& 
+		\includegraphics[width=15mm,trim=0 0 0 -6mm]{imagenes/lenguaje/Aplication/dataObjectApp}  \\ 
+		\hline
 		
-		Ruta de 
-		Comunicación	
-		& \vspace{1mm} Un enlace entre dos o más nodos, a
-		través del cual estos nodos pueden 
-		intercambiar datos.                
-		& \includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/comunicacion}  \\ \hline
+		Función de Aplicación & 
+		\vspace{1mm} Un elemento de comportamiento que agrupa el comportamiento automatizado que puede ser realizado por un componente de aplicación.& 
+		\includegraphics[width=35mm,trim=0 0 0 -6mm]{imagenes/lenguaje/Aplication/functionApp}  \\ 
+		\hline 
 		
-		Interfaz de 
-		infraestructura &\vspace{1mm} Un punto de acceso donde los servicios
-		de infraestructura ofrecidos por un nodo 
-		pueden ser accedidos por otros nodos y 
-		componentes de la aplicación.
-		&  \includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/interfaz}  \\ \hline
+		Interacción de Aplicación &
+		\vspace{1mm} Un elemento de comportamiento que describe el comportamiento de una colaboración de aplicación& 
+		\includegraphics[width=35mm,trim=0 0 0 -6mm]{imagenes/lenguaje/Aplication/interactionApp}  \\ 
+		\hline 	
 		
-		Software del  
-		Sistema
-		&\vspace{1mm} Un entorno de software para tipos específicos de componentes y objetos que
-		se despliegan en él en forma de artefactos.
-		& \includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/software}  \\ \hline 
+		Servicio de Aplicación &
+		\vspace{1mm} Un servicio que expone un comportamiento automatizado & 
+		\includegraphics[width=25mm,trim=0 0 0 -2mm]{imagenes/lenguaje/Aplication/serviceApp} \\ 
+		\hline 
+
+		\caption{Capa de Aplicación}
+		\label{capa-aplicacion}
+\end{longtable}
+\end{center}
+
+
+
+\subsection{Resumen: capa de motivación}
+\begin{center}
+\begin{longtable}{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
+	
+		\hline
+		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
+		\hline
+		\endfirsthead
 		
-		Función de 
-		Infraestructura 
-		&\vspace{1mm} Un elemento de comportamiento que agrupa el comportamiento de infraes
-		tructura que puede ser realizado por un	nodo.
-		& \includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/funcion}  \\ \hline 	
 		
-		Servicio de 
-		Infraestructura 
-		&\vspace{1mm} Una unidad de funcionalidad visible externamente, proporcionada por uno o más nodos, expuesta a través de interfaces bien definidas y significativa para el entorno.
-		&  \includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/servicio} \\ \hline 
+		\hline
+		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
+		\hline
+		\endhead
 		
-		Artefacto 
-		&\vspace{1mm} Una pieza física de datos que se utiliza ose produce en un proceso de desarrollo de software, o mediante el despliegue y la operación de un sistema. 
-		& \includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/artefacto}  \\ \hline
+		Interesados & 
+		\vspace{1mm} El rol de un individuo, equipo u organización (o clases de ellos) que representa sus intereses o preocupaciones, relativas al resultado de la arquitectura.& 
+		\includegraphics[width=25mm,trim=0 0 0 -20mm]{imagenes/lenguaje/Motivational/stakeholder}\\ 
+		\hline
+		
+		Conductor & 
+		\vspace{1mm} 
+		 Algo que crea, motiva y alimenta el cambio en una organización. & 
+		\includegraphics[width=25mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Motivational/driver}\\ 
+		\hline
+		
+		Evaluación &
+		\vspace{1mm} El resultado de algunas evaluaciones de algunos conductores. & 
+		\includegraphics[width=25mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Motivational/assessment}\\ 
+		\hline
+		
+		Objetivo & 
+		\vspace{1mm} Un estado final que una parte interesada desea lograr.& 
+		\includegraphics[width=25mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Motivational/goal}  \\ 
+		\hline
+		
+		Requerimineto &
+		\vspace{1mm} Una declaración de necesidad que debe ser realizada por un sistema. & 
+		\includegraphics[width=35mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Motivational/requirement}  \\ 
+		\hline
+		
+		Restricción & 
+		\vspace{1mm} Una restricción de la forma en que se realiza un sistema.& 
+		\includegraphics[width=35mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Motivational/constraint}  \\ 
+		\hline 
+		
+		Principio &
+		\vspace{1mm} Una propiedad normativa de todos los sistemas en un contexto dado, o la forma en que se realizan.& 
+		\includegraphics[width=25mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Motivational/principle}  \\ 
+		\hline 	
+		
+	\caption{Capa de Motivación}
+	\label{capaMotivacion}
+\end{longtable}
+\end{center}
+
+
+\subsection{Resumen: capa de proyecto}
+\begin{center}
+\begin{longtable}{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
+	
+		\hline
+		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
+		\hline
+		\endfirsthead
+		
+		
+		\hline
+		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
+		\hline
+		\endhead
+		
+		Paquete de Trabajo & 
+		\vspace{1mm} Una serie de acciones diseñadas para lograr una meta única dentro de un tiempo especificado.&
+		\includegraphics[width=30mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Proyect/WorkPackage.png}\\ 
+		\hline
+		
+		Entregable & 
+		\vspace{1mm} 
+		 Un resultado definido con precisión de un paquete de trabajo (work package).& 
+		\includegraphics[width=25mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Proyect/Deliverable.png}\\ 
+		\hline
+		
+		Meseta &
+		\vspace{1mm} Un estado relativamente estable de la arquitectura que existe durante un período de tiempo limitado. &  
+		\includegraphics[width=30mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Proyect/Plateau.png}\\ 
+		\hline
+		
+		Brecha & 
+		\vspace{1mm} Resultado de un análisis de la brecha entre dos mesetas (plateaus).&  
+		\includegraphics[width=25mm,trim=0 0 0 -8mm]{imagenes/lenguaje/Proyect/Gap.png}  \\ 
+		\hline
+		\caption{Capa de Proyecto}
+	\label{capa-proyecto}
+\end{longtable}
+\end{center}
+
+
+\subsection{Resumen: capa de tecnologia}
+\begin{center}
+\begin{longtable}{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
+	
+		\hline
+		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
+		\hline
+		\endfirsthead
+		
+		
+		\hline
+		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
+		\hline
+		\endhead
+		
+		Nodo & 
+		\vspace{1mm} Un recurso computacional sobre el cual los artefactos pueden ser almacenados o	desplegados para su ejecución.&
+		\includegraphics[width=30mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/nodo}\\ 
+		\hline
+		
+		Dispositivo & 
+		\vspace{1mm} 
+		Un recurso de hardware en el que los	artefactos se pueden almacenar o desplegar 	para su ejecución.& 
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/dispositivo}\\ 
+		\hline
+		
+		Red &
+		\vspace{1mm} Un medio de comunicación entre dos o más dispositivos.& 
+		\includegraphics[width=25mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/red}\\ 
+		\hline
+		
+		Ruta de Comunicación & 
+		\vspace{1mm} Un enlace entre dos o más nodos, a	través del cual estos nodos pueden intercambiar datos.& 
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/comunicacion}  \\ 
+		\hline
+		
+		Interfaz de infraestructura &
+		\vspace{1mm} Un punto de acceso donde los servicios de infraestructura ofrecidos por un nodo pueden ser accedidos por otros nodos y componentes de la aplicación.&  
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/interfaz}  \\ 
+		\hline
+		
+		Software del Sistema & 
+		\vspace{1mm} Un entorno de software para tipos específicos de componentes y objetos que	se despliegan en él en forma de artefactos.& 
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/software}  \\ 
+		\hline 
+		
+		Función de Infraestructura &
+		\vspace{1mm} Un elemento de comportamiento que agrupa el comportamiento de infraestructura que puede ser realizado por un	nodo.& 
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/funcion}  \\ 
+		\hline 	
+		
+		Servicio de Infraestructura &
+		\vspace{1mm} Una unidad de funcionalidad visible externamente, proporcionada por uno o más nodos, expuesta a través de interfaces bien definidas y significativa para el entorno.		&  
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/servicio} \\ 
+		\hline 
+		
+		Artefacto &
+		\vspace{1mm} Una pieza física de datos que se utiliza ose produce en un proceso de desarrollo de software, o mediante el despliegue y la operación de un sistema.&
+		\includegraphics[width=35mm,trim=0 0 0 -2mm]{imagenes/lenguaje/tecnologia/artefacto}  \\ 
+		\hline
 		
 
 	\caption{Conceptos de Capa de Tecnología}
@@ -324,7 +354,7 @@ Estas oportunidades y soluciones se identifican e incluyen en el plan de migraci
 
 \subsubsection{Relaciones Estructurales}
 \begin{center}
-	\begin{longtable}[H]{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
+	\begin{longtable}[h]{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
 		
 		\hline
 		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
@@ -386,7 +416,7 @@ Estas oportunidades y soluciones se identifican e incluyen en el plan de migraci
 
 \subsubsection{Relaciones Dinámicas}
 \begin{center}
-	\begin{longtable}[H]{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
+	\begin{longtable}[h]{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
 		
 		\hline
 		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\
@@ -419,7 +449,7 @@ Estas oportunidades y soluciones se identifican e incluyen en el plan de migraci
 
 \subsubsection{Otras Relaciones}
 \begin{center}
-	\begin{longtable}[H]{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
+	\begin{longtable}[h]{| >{\centering\arraybackslash}m{3cm} | >{\arraybackslash}m{6cm} | p{4cm} | p{5cm} | p{4cm} |}
 		
 		\hline
 		\textbf{Concepto} &  \centering \textbf{Definición} & \textbf{Notación} \\

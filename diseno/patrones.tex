@@ -3,11 +3,13 @@
 Los patrones de diseño creacional resumen el proceso de creación de instancias. Ayudan a que un sistema sea independiente de cómo se crean, componen y representan sus objetos. Un patrón de creación de clases utiliza la herencia para variar la clase que está instanciada, mientras que un patrón de creación de objetos delegará la creación de instancias en otro objeto. Los patrones de creación se vuelven importantes a medida que los sistemas evolucionan para depender más de la composición de objetos que de la herencia de clase. Tal como sucede, el énfasis se aparta de la codificación rígida de un conjunto fijo de comportamientos para definir un conjunto más pequeño de comportamientos fundamentales que se pueden componer en cualquier cantidad de comportamientos más complejos. Por lo tanto, crear objetos con comportamientos particulares requiere algo más que simplemente crear una instancia de una clase. Hay dos temas recurrentes en estos patrones. Primero, todos encapsulan el conocimiento sobre las clases concretas que usa el sistema. En segundo lugar, ocultan cómo se crean y se crean las instancias de estas clases. Todo el sistema en general sabe acerca de los objetos es sus interfaces según lo definido por las clases abstractas. En consecuencia, los patrones creacionales le dan mucha flexibilidad en lo que se crea, quién lo crea, cómo se crea y cuándo. Le permiten configurar un sistema con objetos "producto" que varían ampliamente en estructura y funcionalidad. La configuración puede ser estática (es decir, especificada en tiempo de compilación) o dinámica (en tiempo de ejecución).\cite{gof}
 \subsection{Patrón Prototype}
 \subsubsection{Descripción}
-Este patrón tiene or objetivo crear objetos prediseñados sin conocer detalles de cómo crearlos, en diversos casos el costo de crear un objeto elevado, especialmente cuando se deben especificar un gran conjunto de productos. Para este contexto, resulta conveniente, clonar dicho objeto, aprovecharse de la estructura original y ajustarle un nuevo propósito. 
-
+Este patrón tiene or objetivo crear objetos prediseñados sin conocer detalles de cómo crearlos, en diversos casos el costo de crear un objeto elevado, especialmente cuando se deben especificar un gran conjunto de productos. Para este contexto, resulta conveniente, clonar dicho objeto, aprovecharse de la estructura original y ajustarle un nuevo propósito. \\
+\\
+\\
+\\
 \paragraph{Estructura}
 
-\begin{figure}[th!]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Prototype.pdf}
 	\caption{Estructura del patrón Prototype.\cite{gof}}	
@@ -41,7 +43,7 @@ En dicho patrón, el cliente no quiere caer en código duro para la creación de
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Fabrica.pdf}
+	\includegraphics[width=.9\linewidth]{imagenes/Patrones/Fabrica.pdf}
 	\caption{Estructura del patrón Fabrica Abstracta.\cite{gof}}	
 \end{figure}
 
@@ -61,7 +63,7 @@ En dicho patrón, el cliente no quiere caer en código duro para la creación de
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=.7\linewidth]{imagenes/Patrones/Fabrica_caso.pdf}
+	\includegraphics[width=.9\linewidth]{imagenes/Patrones/Fabrica_caso.pdf}
 	\caption{Estructura del patrón Fabrica Abstracta caso de uso.\cite{gof}}	
 \end{figure}
 
